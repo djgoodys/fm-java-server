@@ -1,0 +1,16 @@
+com\example\fmjavaserver\filters\FiltersService.class
+com\example\fmjavaserver\filtertypes\FilterTypesRepository.class
+com\example\fmjavaserver\filtertypes\FilterTypes.class
+com\example\fmjavaserver\filters\FiltersConstroller.class
+com\example\fmjavaserver\equipment\EquipmentConfig.class
+com\example\fmjavaserver\filters\FiltersRepository.class
+com\example\fmjavaserver\equipment\EquipmentRepository.class
+com\example\fmjavaserver\filtertypes\FilterTypesController.class
+com\example\fmjavaserver\MainApplication.class
+com\example\fmjavaserver\equipment\EquipmentController.class
+com\example\fmjavaserver\equipment\Equipment.class
+com\example\fmjavaserver\DataTransfer.class
+com\example\fmjavaserver\filtertypes\FilterTypesService.class
+com\example\fmjavaserver\equipment\EquipmentService.class
+com\example\fmjavaserver\filters\Filters.class
+com\example\fmjavaserver\config\WebConfig.class
