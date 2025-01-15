@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Running build.sh"
-mvn clean install
+mvn clean package
 echo "Build completed"
+
 
