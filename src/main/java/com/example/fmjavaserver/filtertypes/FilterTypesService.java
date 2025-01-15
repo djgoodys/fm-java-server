@@ -1,6 +1,7 @@
 package com.example.fmjavaserver.filtertypes;
 
 import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
@@ -14,13 +15,23 @@ public class FilterTypesService {
 		this.filtertypesRepository = filtertypesRepository;
 	}
 
-	public List<FilterTypes> manageFilterTypes(String action) {
+	public List<FilterTypes> manageFilterTypes(String action, String type, Long Id, String trackable) {
 		if ("get-filter-types".equals(action)) {
 			System.out.println("getting filter types");
 			return filtertypesRepository.findAll();
-		} else {
-			// Handle other actions or provide a default action
-			return filtertypesRepository.findAll(); // Adjust as needed for other actions
+		} else if("update-filter-type".equals(action)){
+			 if (type != null && !type.isEmpty()) {
+                    FilterTypes filterTypes = filtertypesRepository.findById(Id)
+                            .orElseThrow(() -> new IllegalArgumentException("Invalid filter type ID: " + Id));
+                    filterTypes.setType(type); 
+					filterTypes.setTrackable(trackable);
+                    filtertypesRepository.save(filterTypes);
+            }
+            return filtertypesRepository.findAll(); 
+		}
+		
+		else {
+			return filtertypesRepository.findAll();
 		}
 	}
 
@@ -55,5 +66,6 @@ public class FilterTypesService {
 			Optional<FilterTypes> filtertypesOptional = filtertypesRepository.findById(filtertypesId);
 			filtertypes.setTrackable(trackable);
 		}
+		filtertypesRepository.save(filtertypes);
 	}
 }

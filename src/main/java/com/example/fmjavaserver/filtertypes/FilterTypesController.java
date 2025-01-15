@@ -20,8 +20,17 @@ public class FilterTypesController {
 
 
     @GetMapping
-    public List<FilterTypes> manageFilterTypes(@RequestParam(required = false) String action) {
-        return filtertypesService.manageFilterTypes(action);
+    public List<FilterTypes> manageFilterTypes(
+    @RequestParam(required = false) String action,
+    @RequestParam(required = false) String id,
+    @RequestParam(required = false) String filtertype,
+    @RequestParam(required = false) String trackable
+    ) {
+        String validAction = ("undefined".equals(action)) ? null : action;
+        String validType = ("undefined".equals(filtertype)) ? null : filtertype;
+        String validTrackable = ("undefined".equals(trackable)) ? null : trackable;
+        Long validId = (id == null || "undefined".equals(id)) ? null : Long.parseLong(id);
+        return filtertypesService.manageFilterTypes(validAction, validType, validId, validTrackable);
 
 }
 

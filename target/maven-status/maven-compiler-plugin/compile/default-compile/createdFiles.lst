@@ -13,4 +13,5 @@ com\example\fmjavaserver\DataTransfer.class
 com\example\fmjavaserver\filtertypes\FilterTypesService.class
 com\example\fmjavaserver\equipment\EquipmentService.class
 com\example\fmjavaserver\filters\Filters.class
+com\example\fmjavaserver\equipment\DateUtils.class
 com\example\fmjavaserver\config\WebConfig.class

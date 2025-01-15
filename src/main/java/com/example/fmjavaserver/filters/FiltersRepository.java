@@ -10,7 +10,7 @@ public interface FiltersRepository extends JpaRepository<Filters, Long> {
 
     Optional<Filters> findById(Long _id);
 
-    Optional<Filters> findByfiltersize(String filtersize);
+    Optional<Filters> findByfiltersize(String filterSize);
 
     // This method will return all fllters records
     List<Filters> findAll();
