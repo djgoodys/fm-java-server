@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "pom.xml",
+        "src": "build.bat",
         "use": "@vercel/static-build",
         "config": {
           "distDir": "target"
