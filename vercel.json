@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/main/java",
+        "use": "@vercel/ncc"
+      }
+    ],
+    "routes": [
+      {
+        "src": "src/main/java/com/example/fmjavaserver/MainApplication.java",
+        "dest": "/api"
+      }
+    ]
+  }
+  
