@@ -2,14 +2,18 @@
     "version": 2,
     "builds": [
       {
-        "src": "src/main/java",
-        "use": "@vercel/ncc"
+        "src": "pom.xml",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "target"
+        },
+        "buildCommand": "mvn clean install"
       }
     ],
     "routes": [
       {
-        "src": "src/main/java/com/example/fmjavaserver/MainApplication.java",
-        "dest": "/api"
+        "src": "/(.*)",
+        "dest": "/target/fmjavaserver-0.0.1-SNAPSHOT.jar"
       }
     ]
   }

@@ -1,0 +1,23 @@
+{
+  "name": "fm-java-server",
+  "version": "1.0.0",
+  "description": "filter manager back end using Java",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mvn clean install",
+    "start": "java -jar target/fmjavaserver-0.0.1-SNAPSHOT.jar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djgoodys/fm-java-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djgoodys/fm-java-server/issues"
+  },
+  "homepage": "https://github.com/djgoodys/fm-java-server#readme"
+}
+
