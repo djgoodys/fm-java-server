@@ -5,3 +5,6 @@ services:
     plan: free
     buildCommand: "./build.sh"
     startCommand: "java -jar target/fmjavaserver-0.0.1-SNAPSHOT.jar"
+    envVars:
+      - key: JAVA_VERSION
+        value: 11
