@@ -108,7 +108,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.example.fmjavaserver.DataTransfer</mainClass>
+                    <mainClass>com.example.fmjavaserver</mainClass>
                 </configuration>
             </plugin>
 
