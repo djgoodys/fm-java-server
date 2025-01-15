@@ -1,4 +1,6 @@
 #!/bin/bash
 
-# Build the project
+echo "Running build.sh"
 mvn clean install
+echo "Build completed"
+
