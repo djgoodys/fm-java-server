@@ -1,9 +1,11 @@
 com\example\fmjavaserver\filters\FiltersService.class
 com\example\fmjavaserver\filtertypes\FilterTypesRepository.class
+com\example\fmjavaserver\users\UsersService.class
 com\example\fmjavaserver\filtertypes\FilterTypes.class
 com\example\fmjavaserver\filters\FiltersConstroller.class
 com\example\fmjavaserver\equipment\EquipmentConfig.class
 com\example\fmjavaserver\filters\FiltersRepository.class
+com\example\fmjavaserver\users\UsersRepository.class
 com\example\fmjavaserver\equipment\EquipmentRepository.class
 com\example\fmjavaserver\filtertypes\FilterTypesController.class
 com\example\fmjavaserver\MainApplication.class
@@ -11,7 +13,10 @@ com\example\fmjavaserver\equipment\EquipmentController.class
 com\example\fmjavaserver\equipment\Equipment.class
 com\example\fmjavaserver\DataTransfer.class
 com\example\fmjavaserver\filtertypes\FilterTypesService.class
+com\example\fmjavaserver\LoginRequest.class
 com\example\fmjavaserver\equipment\EquipmentService.class
+com\example\fmjavaserver\users\Users.class
 com\example\fmjavaserver\filters\Filters.class
 com\example\fmjavaserver\equipment\DateUtils.class
 com\example\fmjavaserver\config\WebConfig.class
+com\example\fmjavaserver\users\UsersConstroller.class
